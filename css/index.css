@@ -67,157 +67,291 @@ h1, h2, h3, h4, h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-.navbar {
-	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	top: 0;
-	padding: 10px 5px;
-	text-align: center;
+/* Main Structure Styling */
+
+body {
+	width: 88%;
+	margin: 2% auto;
 }
-.logo {
-	margin-right: 20px;
-}
+
 nav {
-	width: 68%;
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-	margin-left: 20%;
+	padding-top: .5%;
 }
+
+.navbar {
+	display:flex;
+	width: 100%;
+	justify-content: space-between;
+	padding-bottom: 3%;
+}
+
 nav a {
-	text-decoration: none;
-	color: gray;
-	font-size: 20px;
-	margin-left: 7%;
-}
-nav a:hover {
 	color: black;
+	text-decoration: none;
+	font-size: 1rem;
+	margin-right: 8%;
+	margin-left: 3%;
+}
+
+h1 {
+	font-size: 7vw;
+	text-align: center;
 }
 
 header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+hr {
 	display: block;
-	margin: 0 auto;
+	border: 1px solid grey;
+	margin: 3% auto;
+}
+
+footer {
+	line-height: 170%;
+	margin-bottom: 7%;;
+}
+
+address {
+	margin-bottom: 5%;;
+}
+
+h2 {
+	
+	font-size: 2vw;
+}
+
+h3 {
+	font-size: 2vw;
+	color: grey;
+	text-align: center;
+	border: 1px solid grey;
+	margin: 0 25%;
+	padding: 3%;
+}
+
+h4 {
+	font-size: 3vw;
+}
+
+h5 {
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-weight: 100;
+	border: 1px solid rgb(78, 78, 78);
+	border-radius: 25px;
+	width: 44%;
+	padding:3%;
 	text-align: center;
 }
-#header-section {
+
+h6 {
+	text-align: center;
+}
+
+p {
+    font-size: 1.3rem;
+}
+
+li {
+	list-style-type: disc;
+    list-style-position: inside;
+    font-size: 3vw;
+}
+
+/* Home Page Styling Below */
+
+.anchor:hover {
+	color: gray;
+}
+
+.anchor:active {
+	color: black;
+}
+
+/* Welcome Banner */
+.welcome {
 	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	align-items: center;
-	font-size: 50px;
-	text-align: center;
-	padding-top: 100px;
+	justify-content: space-evenly;
+	width: 100%;
+	margin-top: 3%;
 }
-#header-section div {
-	margin-right: 15%;
+
+.intro-image img{
+    width: 32vw;
 }
+
+.intro-title {
+	padding-top: 3%;
+}
+
 .button {
 	padding: 5px 30px;
 	font-size: 25px;
 	border-radius: 10px;
-	
+    margin-left: 30px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
 }
 
-
-.page {
-	display: block;
-	margin: 50px auto;
-	width: 80%;
-}
-.section {
+/* About & Services */
+.introduction {
 	display: flex;
-	justify-content: space-between;
-	width: 100%;
-	margin: 30px 0 30px 50%;
-	transform: translate(-50%);
+	justify-content: center;
+	margin-bottom: 2%;
 }
-.section-section {
-	width: 49%;
-	text-align: left;
+
+.introduction div {
+    padding: 1%;
 }
-.section-section2 {
-	width: 32%;
-}
-.section-section p {
-	text-align: justify;
-}
+
+/* Middle Image Break */
 .middle-img {
 	width: 100%;
-	height: 200px;
-	display: block;
-	margin: 0 auto 30px;
-}
-.contact {
-	display: flex;
-	flex-direction: column;
-	text-align: left;
-	line-height: 25px;
-}
-.contact ul li {
-	margin-bottom: 20px;
-}
-
-hr {
-	border: solid 1px black;
-	
-}
-
-footer {
-	text-align: center;
-	margin: 50px 0;
-}
-
-/* Second page */
-
-#services-header {
-	text-align: justify;
-	padding: 50px 0;
-}
-#services-header h1 {
-	font-size: 30px;
-	margin-top: 20px;
-}
-.services-header-img {
-	width: 100%;
-}
-.services-info-img{
-	width: 50%;
-	margin-bottom: 5%;
-}
-
-/* Main Section */
-.section-grid {
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.grid {
-	margin: 20px 0;
-	padding: 30px;
-	width: 49%;
-	background-color: gray;
-	border: solid 1px black;
-	border-radius: 3px;
-}
-.grid p {
-	margin-bottom: 25px;
-}
-.grid .button {
-	font-size: 20px;
-}
-
-/* End Section */
-.list {
-	list-style: square inside;
-	margin-top: 20px;
-	line-height: 30px;
-}
-h2 {
-	color: black;
-}
-.margin-correcting {
-	margin-right: 10px;
-	width: 35%;
+	margin-bottom: 2%;
 }
 
 
+
+/* Media Queries Styling  */
+
+@media (max-width: 800px){
+    
+    body {
+        width:95%;
+    }
+
+    header {
+        margin:0 auto;
+    }
+
+    h1 {
+        font-size: 12vw;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    .navbar {
+        flex-direction: column-reverse;
+        width:100%;
+        padding:0;
+        margin: 0;
+    }
+
+    .navbar .logo{
+        margin: 0 auto;
+    }
+
+    nav a{
+        padding: 3%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .navbar div {
+        width: 100%;
+        padding:0;
+        margin:0 auto;
+    }
+    
+    .intro-image {
+        display:none;
+    }
+
+    .logo-div{
+        width:100%;
+        margin: 1% auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    
+
+}
+
+@media (max-width: 500px){
+    body {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .navbar nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar img{
+        align-self: center;
+    }
+
+    nav a{
+        margin-top: 2%;
+        border-bottom: 1px solid gray;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 13vw;
+    }
+
+    h2 {
+        font-size: 4vh;
+    }
+
+    h3 {
+        font-size: 5vw;
+        text-align: center;
+        margin: 0;
+        padding: 2% 0%;
+    }
+
+    h4 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 1.3rem;
+    }
+
+    hr {
+        margin: 5% 0%;
+    }
+
+    .introduction{
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 4%;
+    }
+
+    .introduction div{
+        padding: 1%;
+        margin-top: 4%;
+    }
+
+    .details {
+        flex-direction: column;
+    }
+
+    .details div{
+        margin-top: 2%;
+    }
+
+    
+}
