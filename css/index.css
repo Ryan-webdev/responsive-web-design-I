@@ -82,7 +82,7 @@ nav {
 .navbar {
 	display:flex;
 	width: 100%;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding-bottom: 3%;
 }
 
@@ -91,7 +91,8 @@ nav a {
 	text-decoration: none;
 	font-size: 1rem;
 	margin-right: 8%;
-	margin-left: 3%;
+    margin-left: 3%;
+    padding-right: 10%;
 }
 
 h1 {
@@ -124,32 +125,6 @@ h2 {
 	font-size: 2vw;
 }
 
-h3 {
-	font-size: 2vw;
-	color: grey;
-	text-align: center;
-	border: 1px solid grey;
-	margin: 0 25%;
-	padding: 3%;
-}
-
-h4 {
-	font-size: 3vw;
-}
-
-h5 {
-	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-	font-weight: 100;
-	border: 1px solid rgb(78, 78, 78);
-	border-radius: 25px;
-	width: 44%;
-	padding:3%;
-	text-align: center;
-}
-
-h6 {
-	text-align: center;
-}
 
 p {
     font-size: 1.3rem;
@@ -176,7 +151,8 @@ li {
 	display: flex;
 	justify-content: space-evenly;
 	width: 100%;
-	margin-top: 3%;
+    margin-top: 3%;
+    align-items: center;
 }
 
 .intro-image img{
@@ -187,14 +163,18 @@ li {
 	padding-top: 3%;
 }
 
-.button {
+.intro-title .button {
 	padding: 5px 30px;
 	font-size: 25px;
 	border-radius: 10px;
-    margin-left: 30px;
+    margin-left: 25%;
     text-decoration: none;
     color: black;
     border: 2px solid black;
+    text-align: center;
+    align-self: center;
+    width: 50%;
+    
 }
 
 /* About & Services */
